@@ -1,0 +1,251 @@
+/* Noticias con efecto hover */
+.noticia1:hover,
+.noticia2:hover,
+.noticia3:hover,
+.noticia4:hover,
+.textoinicio1:hover,
+.textoinicio2:hover,
+.textoinicio3:hover,
+.textoinicio4:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+    transition: box-shadow 0.3s ease-in-out; /* Suaviza la transición de la sombra */
+}
+
+/* Estilos generales y otros */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(177, 177, 200, 0.47);
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: center; /* Centra el contenido dentro del header */
+    color: white;
+    padding: 20px;
+    background-color: #000000;
+    margin-bottom: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea el logo y el título verticalmente */
+    gap: 15px; /* Espacio entre el logo y el título */
+}
+
+.imagen-logo {
+    width: 300px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.nombre-periodico h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.fecha-publicacion p {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgba(255, 253, 171, 0.89);
+    margin: 10px 0;
+}
+
+/* Estructura principal con Flexbox */
+.contenedor-periodico {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Sección de texto dividida en 4 */
+.seccion-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.seccion-texto div {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20);
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.news {
+    display: block; /* Cambiar a block para que el título esté arriba del texto */
+    background-color: rgba(241, 181, 181, 0.63);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(2, 2, 2, 2);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news h2 {
+    margin-bottom: 20px; /* Espacio entre el título y el texto */
+    font-size: 2em;
+    text-align: center; /* Centra el título horizontalmente */
+}
+
+.news-text {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los textos se distribuyan en dos columnas */
+    justify-content: space-between; /* Ajusta el espacio entre los elementos de texto */
+}
+
+.news-text p {
+    text-align: justify; /* Justifica el texto para que se vea como en un periódico */
+}
+
+.news-text > div {
+    flex: 0 0 48%; /* Cada columna de texto ocupa el 48% del ancho del contenedor */
+    margin-bottom: 10px; /* Espacio entre las columnas de texto */
+}
+
+.news-image {
+    flex: 0 0 auto;
+    margin-left: 20px;
+}
+
+.news-image figure {
+    text-align: center; /* Centra la imagen y el pie de imagen */
+}
+
+.news-image figcaption {
+    font-size: 0.9em; /* Tamaño de fuente un poco más pequeño para el pie de imagen */
+    color: #555; /* Color gris suave */
+    margin-top: 5px; /* Espacio entre la imagen y el pie de imagen */
+    font-style: italic; /* Hace que el texto del pie de imagen sea cursivo */
+}
+
+/* Noticia principal */
+.noticia-principal {
+    flex: 1.5;
+    background-color: rgba(241, 181, 181, 0.63);
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(2, 2, 2, 2);
+    text-align: center;
+}
+
+.noticia-principal h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.imagen-principal {
+    width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subtitulo-principal {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Otras noticias */
+.otras-noticias {
+    margin: 20px;
+}
+
+.noticia {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20);
+}
+
+.noticia1,
+.noticia2,
+.noticia3,
+.noticia4 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20);
+}
+
+.noticia1 {
+    background-color: rgba(177, 177, 200, 0.52);
+}
+.noticia2, .noticia4 {
+    background-color: rgba(241, 181, 181, 0.45);
+}
+.noticia3 {
+    background-color: rgba(177, 177, 200, 0.52);
+}
+
+.imagen-cuadro {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.contenido-noticia h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contenido-noticia p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.btn {
+    display: block; /* Hace que el botón se comporte como un bloque */
+    margin: 20px auto; /* Centra el botón horizontalmente */
+    padding: 15px 30px; /* Aumenta el tamaño del botón si es necesario */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+.btn-primary {
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 253, 171, 0.89);
+    padding: 15px 30px; /* Aumenta el tamaño del botón */
+    font-size: 16px;    /* Aumenta el tamaño del texto */
+    float: right;       /* Lo coloca en la esquina derecha */
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: rgba(255, 253, 171, 0.89);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
