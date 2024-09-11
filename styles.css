@@ -7,62 +7,54 @@
 .textoinicio2:hover,
 .textoinicio3:hover,
 .textoinicio4:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
-    transition: box-shadow 0.3s ease-in-out; /* Suaviza la transición de la sombra */
+    box-shadow: 0em 0.5em 1em rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-/* Estilos generales y otros */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgba(177, 177, 200, 0.47);
+    font-size: 1rem; /* Tamaño base de fuente */
 }
 
-/* Estilos para el encabezado */
 header {
-    text-align: center; /* Centra el contenido dentro del header */
+    text-align: center;
     color: white;
-    padding: 20px;
+    padding: 1.25rem; /* Convertido desde 20px */
     background-color: #000000;
-    margin-bottom: 20px;
-}
-
-.header-content {
-    display: flex;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Alinea el logo y el título verticalmente */
-    gap: 15px; /* Espacio entre el logo y el título */
+    margin-bottom: 1.25rem; /* Convertido desde 20px */
 }
 
 .imagen-logo {
-    width: 300px; /* Ajusta el tamaño del logo */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 18.75rem; /* Convertido desde 300px */
+    height: auto;
 }
 
 .nombre-periodico h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 3rem; /* Tamaño relativo para títulos grandes */
 }
 
 .fecha-publicacion p {
-    margin: 5px 0;
-    font-size: 1.2em;
+    margin: 0.3125rem 0; /* Convertido desde 5px */
+    font-size: 1.2rem;
 }
 
 hr {
     border: none;
-    height: 2px;
+    height: 0.125rem; /* Convertido desde 2px */
     background-color: rgba(255, 253, 171, 0.89);
-    margin: 10px 0;
+    margin: 0.625rem 0; /* Convertido desde 10px */
 }
 
-/* Estructura principal con Flexbox */
 .contenedor-periodico {
     flex: 1;
     flex-direction: row;
     justify-content: space-between;
-    margin: 20px;
+    margin: 1.25rem; /* Convertido desde 20px */
 }
 
 /* Sección de texto dividida en 4 */
@@ -71,115 +63,102 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 20px;
+    margin-right: 1.25rem; /* Convertido desde 20px */
 }
 
 .seccion-texto div {
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20);
+    padding: 0.9375rem; /* Convertido desde 15px */
+    border-radius: 0.625rem; /* Convertido desde 10px */
+    margin-bottom: 1.25rem; /* Convertido desde 20px */
+    box-shadow: 0em 0.25em 0.375em rgba(0, 0, 0, 0.20);
     background-color: rgb(255, 255, 255);
     width: 80%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
 }
 
+/* Sección de noticias */
 .news {
     display: block; /* Cambiar a block para que el título esté arriba del texto */
     background-color: rgba(241, 181, 181, 0.63);
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(2, 2, 2, 2);
+    margin: 1.25rem; /* Convertido desde 20px */
+    padding: 1.25rem; /* Convertido desde 20px */
+    border-radius: 0.625rem; /* Convertido desde 10px */
+    box-shadow: 0em 0.25em 0.375em rgba(2, 2, 2, 2);
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* Convertido desde 40px */
 }
 
 .news h2 {
-    margin-bottom: 20px; /* Espacio entre el título y el texto */
-    font-size: 2em;
-    text-align: center; /* Centra el título horizontalmente */
+    margin-bottom: 1.25rem; /* Convertido desde 20px */
+    font-size: 2rem;
+    text-align: center;
 }
 
 .news-text {
     display: flex;
-    flex-wrap: wrap; /* Permite que los textos se distribuyan en dos columnas */
-    justify-content: space-between; /* Ajusta el espacio entre los elementos de texto */
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .news-text p {
-    text-align: justify; /* Justifica el texto para que se vea como en un periódico */
+    text-align: justify;
 }
 
 .news-text > div {
-    flex: 0 0 48%; /* Cada columna de texto ocupa el 48% del ancho del contenedor */
-    margin-bottom: 10px; /* Espacio entre las columnas de texto */
+    flex: 0 0 48%; /* Cada columna de texto ocupa el 48% del ancho */
+    margin-bottom: 0.625rem; /* Convertido desde 10px */
 }
 
 .news-image {
     flex: 0 0 auto;
-    margin-left: 20px;
+    margin-left: 1.25rem; /* Convertido desde 20px */
 }
 
 .news-image figure {
-    text-align: center; /* Centra la imagen y el pie de imagen */
+    text-align: center;
 }
 
 .news-image figcaption {
-    font-size: 0.9em; /* Tamaño de fuente un poco más pequeño para el pie de imagen */
-    color: #555; /* Color gris suave */
-    margin-top: 5px; /* Espacio entre la imagen y el pie de imagen */
-    font-style: italic; /* Hace que el texto del pie de imagen sea cursivo */
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.3125rem; /* Convertido desde 5px */
+    font-style: italic;
 }
 
 /* Noticia principal */
 .noticia-principal {
     flex: 1.5;
     background-color: rgba(241, 181, 181, 0.63);
-    margin-left: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(2, 2, 2, 2);
+    margin-left: 1.25rem; /* Convertido desde 20px */
+    padding: 1.25rem; /* Convertido desde 20px */
+    border-radius: 0.625rem; /* Convertido desde 10px */
+    box-shadow: 0em 0.25em 0.375em rgba(2, 2, 2, 2);
     text-align: center;
 }
 
 .noticia-principal h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 0.625rem; /* Convertido desde 10px */
 }
 
 .imagen-principal {
     width: 80%;
     height: auto;
-    margin-bottom: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.subtitulo-principal {
-    font-size: 1.2em;
-    color: #555;
+    margin-bottom: 0.9375rem; /* Convertido desde 15px */
 }
 
 /* Otras noticias */
 .otras-noticias {
-    margin: 20px;
+    margin: 1.25rem; /* Convertido desde 20px */
 }
 
 .noticia {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20);
+    margin-bottom: 1.25rem; /* Convertido desde 20px */
+    padding: 0.9375rem; /* Convertido desde 15px */
+    border-radius: 0.625rem; /* Convertido desde 10px */
+    box-shadow: 0em 0.25em 0.375em rgba(0, 0, 0, 0.20);
 }
 
 .noticia1,
@@ -188,10 +167,10 @@ hr {
 .noticia4 {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.20);
+    margin-bottom: 1.25rem; /* Convertido desde 20px */
+    padding: 0.9375rem; /* Convertido desde 15px */
+    border-radius: 0.625rem; /* Convertido desde 10px */
+    box-shadow: 0em 0.25em 0.375em rgba(0, 0, 0, 0.20);
 }
 
 .noticia1 {
@@ -205,36 +184,36 @@ hr {
 }
 
 .imagen-cuadro {
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
+    width: 12.5rem; /* Convertido desde 200px */
+    height: 12.5rem; /* Convertido desde 200px */
+    margin-right: 1.25rem; /* Convertido desde 20px */
     object-fit: cover;
 }
 
 .contenido-noticia h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 0.625rem; /* Convertido desde 10px */
 }
 
 .contenido-noticia p {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: #555;
 }
 
 .btn {
-    display: block; /* Hace que el botón se comporte como un bloque */
-    margin: 20px auto; /* Centra el botón horizontalmente */
-    padding: 15px 30px; /* Aumenta el tamaño del botón si es necesario */
-    font-size: 16px; /* Tamaño del texto */
+    display: block;
+    margin: 1.25rem auto; /* Convertido desde 20px */
+    padding: 0.9375rem 1.875rem; /* Convertido desde 15px 30px */
+    font-size: 1rem;
 }
 
 .btn-primary {
     background-color: rgb(0, 0, 0);
     color: rgba(255, 253, 171, 0.89);
-    padding: 15px 30px; /* Aumenta el tamaño del botón */
-    font-size: 16px;    /* Aumenta el tamaño del texto */
-    float: right;       /* Lo coloca en la esquina derecha */
-    margin-top: 20px;
+    padding: 0.9375rem 1.875rem; /* Convertido desde 15px 30px */
+    font-size: 1rem;
+    float: right;
+    margin-top: 1.25rem; /* Convertido desde 20px */
 }
 
 /* Footer */
@@ -242,8 +221,8 @@ footer {
     background-color: #333;
     color: rgba(255, 253, 171, 0.89);
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 1.25rem; /* Convertido desde 20px */
+    margin-top: 1.25rem; /* Convertido desde 20px */
 }
 
 footer p {
